@@ -1,8 +1,6 @@
 # NAME: Guilherme Hofstetter
 living in Paraná-Brazil;
-ε
+✨
 actually studing on CEEP- Pedro Boaretto Netto;
-ε
-Actual age: 16;✨
-ε
+Actual age: 16;
 currently on a development course.
