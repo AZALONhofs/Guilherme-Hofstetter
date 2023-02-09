@@ -3,6 +3,6 @@ living in Paraná-Brazil;
 ε
 actually studing on CEEP- Pedro Boaretto Netto;
 ε
-Actual age: 16;
+Actual age: 16;✨
 ε
 currently on a development course.
