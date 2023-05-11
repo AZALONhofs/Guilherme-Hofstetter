@@ -68,3 +68,27 @@ legend {
     font-size: 20px;
     color: dodgerblue;
 }
+
+#data_nascimento{
+  border:none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+#enviar{
+  background-image: linear-gradient(to right, rgb(0, 92, 192), rgb(90, 20, 220));
+  width: 100%
+  border: none;/*tirar borda do botão enviar*/
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer; /*Qnd passar o mouse por cima do botão enviar, muda o cursor*/
+  border-radius: 10px;
+}
+
+#enviar.hover{
+  background-image: linear-gradient(to right, rgb(0, 92, 192), rgb(90, 20, 195));
+  /*Qnd passar o mouse por cima do botão enviar, irá aplicar esse azul um pouco mais escuro */
+}
