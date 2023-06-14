@@ -1,3 +1,52 @@
+header{
+    background-color: #fdfd96;
+    padding: 20px;
+}
+img{
+    width: 250px;
+    height: 150px;
+    
+}
+@font-face {
+    font-family: 'VeryBerryPro';
+    src: url('fontes/VeryBerryPro-Regular.ttf') format('truetype');
+}
+.titulo-principal{
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    transform: translate(-8%, -50%);
+    font-size: 50px;
+    font-family: 'VeryBerryPro';
+    font-weight: lighter;
+}
+main{
+    width: 940px;
+    margin: auto;
+}
+
+form{
+  margin: 40px 0; /*Margem superior e inferior de 40px, para os lados zero*/
+}
+
+form  label, form p{
+  /*Vamos replicar a mesma configuração do form label para o parágrafo, por isso, o uso da vírgula*/
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px; /*10 pixels para baixo*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-padrao{
+  display:block
+  margin:0 0 20px; /*20px para baixo*/
+  padding: 10px;
+}
+
+.checkbox{
+  margin: 20px 0;
+  /*20px p/ cima e p/ baixo e zero nas laterais*/
+}
+
 .enviar{
   width: 40%;
   padding: 45px 0;
