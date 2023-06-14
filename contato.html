@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+  <link rel="stylesheet" href="./reset.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="contato.css">
+  <title>Formulário </title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="padaria.png" alt="logo padaria store">
+    <h1 class="titulo-principal">cacetinho e salame italiano quentinho!</h1>
+
+      <nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contato.html">Contatos</a></li>
+				</ul>
+			</nav>
+  </header>
+
+  <main>
+    <!-- Meio -->
+    <form>
+      <label for="nomesobrenome">Nome e sobrenome</label>
+      <input type="text" name="nome" id="nomesobrenome" class="input-padrao" placeholder="Seu nome e sobrenome" required />
+                        
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required />
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" name="telefone" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required />
+
+      <label for="mensagem"> Mensagem</label>
+      <textarea cols="70" rows="10" id="mensagem" placeholder="Digite seu texto aqui!" required></textarea>
+
+      <section>
+        <p>Como prefere nosso contato?</p>
+          <label for="radio-email">
+          <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" />Email</label>
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" />Telefone</label>
+          <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" />Whatsapp</label>
+      </section>
+      
+      <section>
+        <p>Qual horário prefere ser atendido?</p>
+        <select>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+          <!--dropdown - seleçoẽs selecionáveis-->
+        </select>
+      </section>
+      <label class="checkbox"> <input type="checkbox" />Gostaria de receber nossas novidades por email? </label>
+      <input type="submit" value="Enviar Formulário" class="enviar" />
+    </form>
+  </main>
+  <footer>
+    <!-- Rodapé -->
+    <img id="logo1" src="padaria.png" />
+    <p class="copyright">&copy; Copyright --Guilherme Hofstetter</p>
+  </footer>
+</body>
+</html>
