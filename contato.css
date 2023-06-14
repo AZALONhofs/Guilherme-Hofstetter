@@ -1,1 +1,41 @@
+.enviar{
+  width: 40%;
+  padding: 45px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
 
+.copyright {
+	color: whitesmoke;
+	font-size: 16px;
+	margin: 10px 0 0;
+}
+}
+
+.footer{
+    text-align: center;
+    background-image: url("padaria.png");
+  /*Esta propriedade é utilizada para inseir imagens como plano de fundo de um elemento. Para isso, fazemos uso da função url(), para o qual passamos como parâmetro o caminho da imagem a ser inserida.*/
+    padding: 10px 0;
+}
+
+#logo1{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+ nav {
+	position: absolute;
+	/*posicionamento dos links*/
+	top: 10px;
+	right: 20px;
