@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prova do Menon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/efeitos_sonoros.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+
+</head>
+<body>
+
+    <h1>Efeitos Sonoros daquele Mario</h1>
+
+    <section class="teclado">
+        <button class="tecla tecla_mamma"><img class="mamma" src="/images/mamma-mia.jpeg" alt="mamma-mia"></button>
+        <button class="tecla tecla_bonk"><img class="bonk" src="images/bonk.jpg" alt="bonk"></button>
+        <button class="tecla tecla_toad"><img class="toad" src="images/toad.jpeg" alt="toad"></button>
+
+        <button class="tecla tecla_yoshi-sound"><img class="yoshi" src="images/yoshi.png" alt="yoshi-sound"></button>
+        <button class="tecla tecla_scream"><img class="scream" src="images/scream.png" alt="scream"></button>
+        <button class="tecla tecla_mario-jump"><img class="mario-jump" src="images/jump.jpg" alt="mario-jump"></button>
+
+        <button class="tecla tecla_8-bit"><img class="bit" src="images/8-bits.png" alt="8-bit"></button>
+        <button class="tecla tecla_mario-falling"><img class="falling" src="images/falling.jpeg" alt="mario-falling"></button>
+        <button class="tecla tecla_okie-dokey"><img class="okie-dokey" src="images/okie-dokey.jpg" alt="okie-dokey"></button>
+    </section>
+
+    <audio src="sounds/mamma-mia.mp3" id="som_tecla_mamma"></audio>
+    <audio src="sounds/bonk.mp3" id="som_tecla_bonk"></audio>
+    <audio src="sounds/toad.mp3" id="som_tecla_toad"></audio>
+    <audio src="sounds/yoshi-sound.mp3" id="som_tecla_yoshi-sound"></audio>
+    <audio src="sounds/scream.mp3" id="som_tecla_scream"></audio>
+    <audio src="sounds/mario-jump.mp3" id="som_tecla_mario-jump"></audio>
+    <audio src="sounds/8-bit.mp3" id="som_tecla_8-bit"></audio>
+    <audio src="sounds/mario-falling.mp3" id="som_tecla_mario-falling"></audio>
+    <audio src="sounds/okie-dokey.mp3" id="som_tecla_okie-dokey"></audio>
+
+    <script>
+        function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();
+}
+
+let lista = document.querySelectorAll(".tecla");
+
+let contador = 0;
+while (contador< lista.length) {
+    const efeito = lista[contador].classList[1];
+    const idAudio = "#som_"+efeito;
+    lista[contador].onclick = function() {
+        tocaSom(idAudio);
+    }
+contador++;
+}
+    </script>
+    <script src="main.js">
+    </script>
+</body>
+</html>
