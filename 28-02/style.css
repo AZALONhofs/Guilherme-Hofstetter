@@ -1,0 +1,8 @@
+body {
+    background-image: url(img/wood.png);
+}
+.texto {
+    text-align: center;
+    margin-top: 400px;
+    color:crimson;
+}
